@@ -7,7 +7,7 @@ const App = () => {
   const [playlists, setPlaylists] = useState([]);
 
   const fetchPlaylists = () => {
-    fetch("https://rezzieomoigui.onrender.com/api/playlists")
+    fetch("https://mysoundapp-server.onrender.com/api/playlists")
       .then((res) => res.json())
       .then((data) => setPlaylists(data));
   };
